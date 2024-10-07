@@ -7,101 +7,105 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container>
-    
-    <form action="" method="post">
-        <div>
-
-            <label for= "Name">Name</label><br>
-            <input type="text" id="Name" placeholder="Enter your Name">
-        </div>
-        <div>
-            <label for="user email">Email Address</label><br>
-           
-         <input type="email" id="user email" placeholder="Enter your email">
-        </div>
-        <div>
-            <label for="Age">Age</label><br>
-            <input type="number" id="Age" placeholder="your Age">
-        </div>
-        <label for="description">which option describes you?</label><br>
+    <div id="error"></div>
+    <div class="registration-form">
+    <h1>GENESYS SURVEY FORM</h1>
+   
+    <form onsubmit="return validate" action="#" method="get" id="form">
         
-        <select name="description" id="">
+        
+         <div class="input-box">
+            <p>Name</p>
+            <input type="text" id="Name" placeholder="Enter your Name" required>
+        </div>
+          <div class="input-box">
+            <p>Email</p>
+            <input type="email"  id="user_email" placeholder="Enter your email" required>
+        </div>
+          <div class="input-box">
+         <p>Age</p>
+            <input type="number" id="Age" placeholder="Enter your Age" required>
+        </div>
+            
+            <p>which option describes you?</p>
+           <select name="description"  id="description" required>
             <option value="Student">Student</option>
             <option value="self Employed">self employed</option>
             <option value="graduate">graduate</option>
             <option value="business">business </option>
         </select>
-        <h5>would you like to recommend Genesys upskill to a friend?</h5>
-        <div>
-            <input type="radio" id="Yes" name="Genesys upskill" value="No">
+        <div id="custom-radio">
+        <p>would you like to recommend Genesys upskill to a friend?</p>
+        
+           <p> <input type="radio" id="Yes" name="Genesys upskill" value="No">
             <label for="yes">Yes</label>
-        </div>
-            <div>
-                <input type="radio" id="No" name="Genesys upskill" value="No">
-                <label for="No">No</label>
-            </div>
-            <div>
+            </p>
+        
+            
+                <p><input type="radio" id="No" name="Genesys upskill" value="No">
+                <label for="No">No</label></p>
+            
+            <p>
                 <input type="radio" id="Maybe" name="Genesys upskill" value="Maybe">
                 <label for="Maybe">Maybe</label>
-            </div>
-            <h5>Languages and Frameworks known (check all that apply)</h5>
-            <div>
+            </p>
+            <p>Languages and Frameworks known (check all that apply)</p>
+            <p>
                 <input type="radio" id="C" name="Frameworks" value=" C">
                 <label for="C">C</label>
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="C++" name="Frameworks" value="C++">
                 <label for="C + +">C + +</label>
-            </div>
-            <div>
+            </p>
+            <P>
                 <input type="radio" id="C #" name="Frameworks" value="C #">
                 <label for="C #">C #</label>
-            </div>
-            <div>
+            </p>
+            <P>
                 <input type="radio" id="Java" name="Frameworks" value="Java">
                 <label for="Java">Java</label>
 
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="Python" name="Frameworks" value="Python">
                 <label for="Python">Python</label>
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="Javascript" name="Frameworks" value="Javascript">
                 <label for="Javascript">Javascript</label>
 
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="React" name="Frameworks" value="React">
                 <label for="React">React</label>
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="Angular" name="Frameworks" value="Angular">
                 <label for="Angular">Angular</label>
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="Django" name="Frameworks" value="Django">
                 <label for="Django">Django</label>
-            </div>
-            <div>
+            </p>
+            <p>
                 <input type="radio" id="Spring" name="Frameworks" value="Spring">
                 <label for="Spring">Spring</label>
+            </p>
             </div>
-            <h5>Any comment or suggestions</h5>
-            <div>
+            <p>Any comment or suggestions</p>
+            <p>
 
-                <textarea name="comment" id="" cols="60" rows="20"></textarea>
-            </div>
-            <div>
-                <button>
-                    <button type="submit">Submit</button>
-                </button>
-            </div>
-        </div>
+                <textarea name="comment" id="" cols="70" rows="10"></textarea>
+            </p>
+            <p>
+                <button type="submit"> Submit</button>
+            </p>
+    </div>
+</form>
     
+ <script src="main.js"></script>
         
 
-    </form>
 </body>
 </html>
