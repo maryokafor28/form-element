@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div id="error"></div>
     <div class="registration-form">
     <h1>GENESYS SURVEY FORM</h1>
    
-    <form onsubmit="return validate" action="#" method="get" id="form">
+    <form action="#" method="get" id="form">
         
         
          <div class="input-box">
@@ -20,15 +21,15 @@
         </div>
           <div class="input-box">
             <p>Email</p>
-            <input type="email"  id="user_email" placeholder="Enter your email" required>
+            <input type="email"  id="user_email" placeholder="Enter your email"  required >
         </div>
           <div class="input-box">
          <p>Age</p>
-            <input type="number" id="Age" placeholder="Enter your Age" required>
+            <input type="number" id="Age" placeholder="Enter your Age"  required >
         </div>
             
             <p>which option describes you?</p>
-           <select name="description"  id="description" required>
+           <select name="description"  id="description"  required >
             <option value="Student">Student</option>
             <option value="self Employed">self employed</option>
             <option value="graduate">graduate</option>
@@ -37,16 +38,16 @@
         <div id="custom-radio">
         <p>would you like to recommend Genesys upskill to a friend?</p>
         
-           <p> <input type="radio" id="Yes" name="Genesys upskill" value="No">
+           <p> <input type="radio" id="Yes" name="Genesys upskill" value="No" >
             <label for="yes">Yes</label>
             </p>
         
             
-                <p><input type="radio" id="No" name="Genesys upskill" value="No">
+                <p><input type="radio" id="No" name="Genesys upskill" value="No" >
                 <label for="No">No</label></p>
             
             <p>
-                <input type="radio" id="Maybe" name="Genesys upskill" value="Maybe">
+                <input type="radio" id="Maybe" name="Genesys upskill" value="Maybe" >
                 <label for="Maybe">Maybe</label>
             </p>
             <p>Languages and Frameworks known (check all that apply)</p>
@@ -99,11 +100,17 @@
                 <textarea name="comment" id="" cols="70" rows="10"></textarea>
             </p>
             <p>
-                <button type="submit"> Submit</button>
+                <button type="submit" class="btn" onclick="openpopup()" >Submit</button>
             </p>
+            <div class="popup" id="popup">
+                <img src="imagess/checkimg.jpg" alt="">
+            <H2>THANK YOU!</H2>
+            <P>Your details have been successfully submitted. Thanks</P>
+            <button type="button" onclick="closepopup()">OK</button>
+            </div>
     </div>
 </form>
-    
+   
  <script src="main.js"></script>
         
 
